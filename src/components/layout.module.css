@@ -1,11 +1,46 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .container {
-    margin: auto;
-    max-width: 500px;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
     font-family: sans-serif;
+    border: solid 2px pink;
+    overflow: auto;
+}
+
+.site-title {
+    font-size: 3rem;
+    color: gray;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+.header-link {
+    text-decoration: none;
+    color: gray;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px blue;
 }
 
 .heading {
-    color: grey;
+    color: purple;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    border: solid 2px red;
+    height: 100%;
 }
 
 .nav-links {
@@ -22,9 +57,8 @@
     color: black;
 }
 
-.site-title {
-    font-size: 3rem;
-    color: gray;
-    font-weight: 700;
-    margin: 3rem 0;
+footer {
+    border: solid 2px black;
+    display: flex;
+    justify-content: center;
 }
