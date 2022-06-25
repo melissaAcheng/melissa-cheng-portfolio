@@ -9,7 +9,7 @@ html, body {
     height: 100vh;
     width: 100%;
     font-family: sans-serif;
-    border: solid 2px pink;
+    /* border: solid 2px pink; */
     overflow: auto;
 }
 
@@ -29,7 +29,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: solid 2px blue;
+    /* border: solid 2px blue; */
 }
 
 .heading {
@@ -39,8 +39,8 @@ html, body {
 }
 
 main {
-    border: solid 2px red;
-    height: 100%;
+    /* border: solid 2px red; */
+    height: 50%;
 }
 
 .nav-links {
@@ -58,7 +58,7 @@ main {
 }
 
 footer {
-    border: solid 2px black;
+    /* border: solid 2px black; */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }

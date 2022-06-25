@@ -1,15 +1,7 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import {
-  container,
-  heading,
-  headerLink,
-  navLinks,
-  navLinkItem,
-  navLinkText,
-  siteTitle,
-  navbar,
-} from "./layout.module.css";
+import Navbar from "./Navbar";
+import "../styles/layout.css";
 
 const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -22,65 +14,21 @@ const Layout = ({ pageTitle, children }) => {
     }
   `);
   return (
-    <div className={container}>
+    <div className="layout">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <div className={navbar}>
-        <header className={siteTitle}>
-          <Link className={headerLink} to="/">
-            {data.site.siteMetadata.title}
-          </Link>
-        </header>
-        <nav>
-          <ul className={navLinks}>
-            {/* <li className={navLinkItem}>
-              <Link to="/" className={navLinkText}>
-                Home
-              </Link>
-            </li> */}
-            <li className={navLinkItem}>
-              <Link to="/about" className={navLinkText}>
-                About
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/projects" className={navLinkText}>
-                Projects
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/music" className={navLinkText}>
-                Music
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/teaching" className={navLinkText}>
-                Teaching
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/blog" className={navLinkText}>
-                Blog
-              </Link>
-            </li>
-            <li className={navLinkItem}>
-              <Link to="/contact" className={navLinkText}>
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+      <Navbar />
       <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
+        {pageTitle !== "Home" && <h1>{pageTitle}</h1>}
+        <section>{children}</section>
       </main>
       <footer>
-        <ul className={navLinks}>
-          <li className={navLinkItem}>Facebook</li>
-          <li className={navLinkItem}>YouTube</li>
-          <li className={navLinkItem}>Instagram</li>
+        <p>Copyright 2022 Melissa Cheng</p>
+        <ul>
+          <li>Facebook</li>
+          <li>YouTube</li>
+          <li>Instagram</li>
         </ul>
       </footer>
     </div>
