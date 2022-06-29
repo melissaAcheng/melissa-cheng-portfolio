@@ -26,9 +26,21 @@ const Layout = ({ pageTitle, children }) => {
       <footer>
         <p>Copyright 2022 Melissa Cheng</p>
         <ul>
-          <li>Facebook</li>
-          <li>YouTube</li>
-          <li>Instagram</li>
+          <li>
+            <Link to="https://www.facebook.com/melissaaaaaacheng/" target="_blank">
+              Facebook
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.youtube.com/c/MelissaCheng" target="_blank">
+              YouTube
+            </Link>
+          </li>
+          <li>
+            <Link to="https://www.instagram.com/melplaysflute/?hl=en" target="_blank">
+              Instagram
+            </Link>
+          </li>
         </ul>
       </footer>
     </div>
