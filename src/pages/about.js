@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 import Layout from "../components/layout";
 import * as styles from "../styles/about.module.css";
+import { Link } from "gatsby";
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -11,23 +12,29 @@ const AboutPage = () => {
       <section className={styles.about}>
         <StaticImage alt="profile" src="../images/profile_3.jpg" />
         <div>
-          <p>I'm a software developer based in New York, NY. I am proficient in HTML, CSS, JavaScript, and Python.</p>
+          <h2>Hi there!</h2><br/>
+          <p>I'm a <strong>software developer</strong> and <strong>flutist</strong> based in New York, NY.</p>
+          <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu ornare ex. Maecenas in lectus neque. In
-            mattis libero non urna feugiat sodales. Nunc bibendum elit odio, nec condimentum quam placerat et. Curabitur
-            finibus gravida nisi, nec commodo nisl. Fusce dignissim justo et magna laoreet, eu dictum nisl iaculis.
-            Pellentesque mattis est a erat mattis porta. Integer tortor mi, vulputate eu augue nec, commodo feugiat
-            tortor. Aliquam maximus, lectus vel fringilla mattis, tortor arcu elementum elit, nec imperdiet justo nisl
-            non tellus. Duis tempus, erat eget condimentum varius, arcu dui congue odio, sed interdum orci mi at sem.
-            Aenean scelerisque a lacus ac feugiat. Ut ac eros sit amet ipsum semper ornare. Nullam erat magna, sodales
-            et risus nec, scelerisque interdum ex. Vivamus leo risus, mollis non urna in, venenatis accumsan odio.
-            Mauris dignissim ut nisi eget venenatis. Mauris nibh purus, interdum id volutpat vel, placerat et dolor.
-            Duis sed efficitur nisl. Praesent tempor vulputate facilisis. Donec vel nunc sit amet nibh condimentum
-            consectetur vel auctor nunc. In hac habitasse platea dictumst. Sed pretium eros et magna placerat, id
-            ultrices lorem lobortis. Nunc posuere leo in nisi tristique tempus ut non metus. Praesent quis consectetur
-            odio. Sed sed consequat arcu, nec molestie arcu. Vestibulum aliquet consectetur dui sed sodales. Aenean
-            gravida eros sem, vitae viverra felis eleifend nec. Mauris semper cursus odio, quis vehicula dolor mollis
-            interdum.
+            I first discovered my passion for technology and programming while working as an arts administrator. I enjoy
+            problem-solving and building applications that improve efficiency and productivity. I have experience
+            working with languages and technologies including JavaScript, React, HTML/CSS, Python, Java, MySQL, and
+            MongoDB.
+          </p>
+          <br />
+          <p>
+            Browse through my projects <Link to="/projects" className={styles.link}>here!</Link>
+          </p>
+          <br />
+          <p>
+            As a professional classical flutist, I have performed with orchestras in venues both local and international
+            including Carnegie Hall, Berliner Philharmonie, and Boston Symphony Hall. As an arts administrator, I have
+            worked at top arts organizations including Kaufman Music Center and American Ballet Theatre. A dedicated
+            educator, I currently maintain an active private studio in Queens, NY.
+          </p>
+          <br />
+          <p>
+            Check out my <Link to="/music" className={styles.link}>music</Link> or learn more about my <Link to="/teaching" className={styles.link}>studio</Link>!
           </p>
         </div>
       </section>

@@ -1,0 +1,31 @@
+.teaching {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.image {
+  margin-top: 40px;
+}
+
+.faq h3 {
+  margin: 20px auto;
+}
+
+.faq ul {
+  list-style: none;
+}
+
+.text {
+  text-align: center;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: white;
+}
+

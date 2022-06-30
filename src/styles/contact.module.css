@@ -1,0 +1,13 @@
+.contact {
+  text-align: center;
+}
+
+.socials {
+  margin: 20px 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* .socials p {
+  justify-content: space-between;
+} */
