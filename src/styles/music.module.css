@@ -1,0 +1,18 @@
+.music {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 80px;
+  margin: 80px 20px;
+}
+
+.text {
+  text-align: center ;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: white;
+}

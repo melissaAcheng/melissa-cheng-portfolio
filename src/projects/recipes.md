@@ -11,12 +11,12 @@ thumb: ../images/thumbs/studio-portal_1.png
 
 <!-- About the project, what it does -->
 
-## About
+### About
 
 <!-- Any problems encountered -->
 
-## Process and Learning
+### Process and Learning
 
 <!-- Next steps -->
 
-## Looking Ahead
+### Looking Ahead

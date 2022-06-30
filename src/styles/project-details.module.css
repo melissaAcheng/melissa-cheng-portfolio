@@ -1,0 +1,28 @@
+.title {
+  font-size: 3.5em;
+  margin-top: 80px;
+}
+
+.stack {
+  font-weight: 400;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: white;
+}
+
+.html {
+  margin-top: 40px;
+}
+
+.html h3 {
+  margin: 30px auto;
+}
+
+.featured {
+  margin: 40px auto;
+}
