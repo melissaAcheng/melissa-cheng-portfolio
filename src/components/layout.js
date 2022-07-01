@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Navbar from "./Navbar";
+import { StaticImage } from "gatsby-plugin-image";
 import "../styles/layout.css";
 
 const Layout = ({ pageTitle, children }) => {
@@ -24,24 +25,36 @@ const Layout = ({ pageTitle, children }) => {
         <section>{children}</section>
       </main>
       <footer>
-        <p>Copyright 2022 Melissa Cheng</p>
-        <ul>
-          <li>
-            <Link to="https://www.facebook.com/melissaaaaaacheng/" target="_blank">
-              Facebook
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.youtube.com/c/MelissaCheng" target="_blank">
-              YouTube
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.instagram.com/melplaysflute/?hl=en" target="_blank">
-              Instagram
-            </Link>
-          </li>
-        </ul>
+        <div>
+          <p>Copyright 2022 Melissa Cheng</p>
+          <ul>
+            <li>
+              <Link to="https://www.linkedin.com/in/melissaacheng/" target="_blank">
+                <StaticImage src="../images/socials/linkedin-1.svg" alt="LinkedIn icon" />
+              </Link>
+            </li>
+            <li>
+              <a href="mailto: melcheng12@gmail.com" target="_blank">
+                <StaticImage src="../images/socials/mail.svg" alt="Email icon" />
+              </a>
+            </li>
+            <li>
+              <Link to="https://github.com/melissaAcheng" target="_blank">
+                <StaticImage src="../images/socials/github-1.svg" alt="GitHub icon" />
+              </Link>
+            </li>
+            {/* <li>
+              <Link to="https://www.youtube.com/c/MelissaCheng" target="_blank">
+                <StaticImage src="../images/socials/youtube-1.svg" alt="YouTube icon" />
+              </Link>
+            </li> */}
+            {/* <li>
+              <Link to="https://www.instagram.com/melplaysflute/?hl=en" target="_blank">
+                <StaticImage src="../images/socials/instagram.svg" alt="Instagram icon" />
+              </Link>
+            </li> */}
+          </ul>
+        </div>
       </footer>
     </div>
   );
