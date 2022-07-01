@@ -26,7 +26,6 @@ const Layout = ({ pageTitle, children }) => {
       </main>
       <footer>
         <div>
-          <p>Copyright 2022 Melissa Cheng</p>
           <ul>
             <li>
               <Link to="https://www.linkedin.com/in/melissaacheng/" target="_blank">
@@ -45,15 +44,16 @@ const Layout = ({ pageTitle, children }) => {
             </li>
             {/* <li>
               <Link to="https://www.youtube.com/c/MelissaCheng" target="_blank">
-                <StaticImage src="../images/socials/youtube-1.svg" alt="YouTube icon" />
+              <StaticImage src="../images/socials/youtube-1.svg" alt="YouTube icon" />
               </Link>
             </li> */}
             {/* <li>
               <Link to="https://www.instagram.com/melplaysflute/?hl=en" target="_blank">
-                <StaticImage src="../images/socials/instagram.svg" alt="Instagram icon" />
+              <StaticImage src="../images/socials/instagram.svg" alt="Instagram icon" />
               </Link>
             </li> */}
           </ul>
+          <p>© Copyright Melissa Cheng. All Rights Reserved</p>
         </div>
       </footer>
     </div>

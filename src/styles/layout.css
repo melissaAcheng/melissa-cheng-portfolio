@@ -77,6 +77,7 @@ footer {
 
 footer p {
   color: lightgray;
+  padding-top: 1rem;
 }
 
 footer ul {
@@ -84,7 +85,6 @@ footer ul {
   flex-wrap: wrap;
   list-style: none;
   justify-content: center;
-  padding-top: 1rem;
 }
 
 footer li {
