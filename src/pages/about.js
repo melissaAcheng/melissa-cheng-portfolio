@@ -12,8 +12,11 @@ const AboutPage = () => {
       <section className={styles.about}>
         <StaticImage alt="profile" src="../images/profile_3.jpg" />
         <div>
-          <h2>Hi there!</h2><br/>
-          <p>I'm a <strong>software developer</strong> and <strong>flutist</strong> based in New York, NY.</p>
+          <h2>Hi there!</h2>
+          <br />
+          <p>
+            I'm a <strong>software developer</strong> and <strong>flutist</strong> based in New York, NY.
+          </p>
           <br />
           <p>
             I first discovered my passion for technology and programming while working as an arts administrator. I enjoy
@@ -23,7 +26,11 @@ const AboutPage = () => {
           </p>
           <br />
           <p>
-            Browse through my projects <Link to="/projects" className={styles.link}>here!</Link>
+            Browse through my{" "}
+            <Link to="/projects" className={styles.link}>
+              projects
+            </Link>
+            !
           </p>
           <br />
           <p>
@@ -34,7 +41,15 @@ const AboutPage = () => {
           </p>
           <br />
           <p>
-            Check out my <Link to="/music" className={styles.link}>music</Link> or learn more about my <Link to="/teaching" className={styles.link}>studio</Link>!
+            Check out my{" "}
+            <Link to="/music" className={styles.link}>
+              music
+            </Link>{" "}
+            or learn more about my{" "}
+            <Link to="/teaching" className={styles.link}>
+              studio
+            </Link>
+            !
           </p>
         </div>
       </section>

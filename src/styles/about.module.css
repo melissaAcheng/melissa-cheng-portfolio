@@ -8,3 +8,7 @@
 .link {
   color:blue;
 }
+
+.link:hover {
+  color: white;
+}
