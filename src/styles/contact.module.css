@@ -3,11 +3,33 @@
 }
 
 .socials {
-  margin: 20px 250px;
+  margin: 25px 250px;
   display: flex;
   justify-content: space-around;
+  /* border: 2px solid blue; */
 }
 
-/* .socials p {
-  justify-content: space-between;
-} */
+.socials li {
+  list-style: none;
+  /* padding: 10px; */
+  vertical-align: baseline;
+  /* border: 2px solid red; */
+}
+
+.linkIcon {
+  position: relative;
+  display: inline-block;
+  /* width: 200px;
+  height: 200px; */
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0,0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.linkIcon:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
