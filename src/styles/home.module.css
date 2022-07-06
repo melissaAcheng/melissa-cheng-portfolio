@@ -56,3 +56,18 @@
   color: black;
   background-color: white;
 }
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 700px) {
+  .header {
+    display: block;
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  
+}

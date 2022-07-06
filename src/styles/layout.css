@@ -26,7 +26,7 @@ body {
 
 /* LAYOUT AND NAV */
 .layout {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   position: relative;
   min-height: 100vh;
   margin: 0 auto;
@@ -53,6 +53,13 @@ nav a:hover {
   color: whitesmoke;
 }
 
+.navMenu {
+  /* border: 2px solid red; */
+  display: none;
+}
+
+/* Page Content */
+
 main {
   padding-bottom: 10rem;
 }
@@ -72,7 +79,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 2px solid blue; */
 }
 
 footer p {
@@ -91,3 +97,61 @@ footer li {
   margin: auto 10px;
 }
 
+@media screen and (max-width: 700px) {
+  nav {
+    display: initial;
+  }
+
+  nav ul {
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+  }
+
+  nav h1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  
+  nav h1 {
+    /* justify-content: left; */
+    /* padding-left: 1rem; */
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  .navMenu {
+    display: block;
+  }
+  
+  nav ul {
+    overflow: hidden;
+    background: #9f9f9f;
+    display: list-item;
+    text-align: right;
+    height: 0;
+  }
+
+  nav ul li{
+    display: block;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  nav ul.showMenu {
+    height: auto;
+  }
+
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+  }
+}
