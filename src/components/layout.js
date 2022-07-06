@@ -16,6 +16,7 @@ const Layout = ({ pageTitle, children }) => {
   `);
   return (
     <div className="layout">
+      <meta name="viewport" content="width=device-width"></meta>
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
