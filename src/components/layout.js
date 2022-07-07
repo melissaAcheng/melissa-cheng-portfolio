@@ -43,16 +43,6 @@ const Layout = ({ pageTitle, children }) => {
                 <StaticImage src="../images/socials/github-1.svg" alt="GitHub icon" />
               </Link>
             </li>
-            {/* <li>
-              <Link to="https://www.youtube.com/c/MelissaCheng" target="_blank">
-              <StaticImage src="../images/socials/youtube-1.svg" alt="YouTube icon" />
-              </Link>
-            </li> */}
-            {/* <li>
-              <Link to="https://www.instagram.com/melplaysflute/?hl=en" target="_blank">
-              <StaticImage src="../images/socials/instagram.svg" alt="Instagram icon" />
-              </Link>
-            </li> */}
           </ul>
           <p>© Copyright Melissa Cheng. All Rights Reserved</p>
         </div>

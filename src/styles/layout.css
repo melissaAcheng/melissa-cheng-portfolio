@@ -14,15 +14,9 @@ html, body {
 }
 
 body {
-  /* background: #BAB2B5; */
   background: #C1A8A8;
   background-repeat: no-repeat;
 }
-
-/* p {
-  margin: 16px auto;
-  line-height: 1.5em;
-} */
 
 /* LAYOUT AND NAV */
 .layout {
@@ -117,12 +111,7 @@ footer li {
 }
 
 @media screen and (max-width: 480px) {
-  
-  nav h1 {
-    /* justify-content: left; */
-    /* padding-left: 1rem; */
-  }
-  
+   
   footer p {
     text-align: center;
   }
