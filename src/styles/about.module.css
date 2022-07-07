@@ -1,8 +1,10 @@
 .about {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-gap: 40px;
   align-items: center;
+  max-width: 1200px;
+  margin: 10px auto;
 }
 
 .link {
@@ -11,4 +13,18 @@
 
 .link:hover {
   color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 700px) {
+  .about {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  
 }
