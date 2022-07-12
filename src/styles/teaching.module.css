@@ -29,3 +29,12 @@
   color: white;
 }
 
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 780px) {
+  .teaching {
+    display: block;
+  }
+}
+

@@ -36,7 +36,9 @@
 /* tablets */
 @media screen and (max-width: 780px) {
   .music {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: block;
+  }
+  .iframeContainer {
+    margin: 20px auto;
   }
 }
