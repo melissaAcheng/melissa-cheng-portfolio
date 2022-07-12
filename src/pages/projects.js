@@ -20,7 +20,7 @@ const ProjectsPage = ({ data }) => {
                 <div>
                   <GatsbyImage image={project.frontmatter.thumb.childImageSharp.gatsbyImageData} alt="project image" />
                   <h3>{project.frontmatter.title}</h3>
-                </div>
+               </div>
               </Link>
               <p>{project.frontmatter.stack}</p>
               <p>

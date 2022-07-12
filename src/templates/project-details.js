@@ -9,7 +9,7 @@ const projectDetails = ({ data }) => {
   const { title, stack, github, thumb } = data.markdownRemark.frontmatter;
   return (
     <Layout>
-      <div>
+      <div className={styles.project}>
         <h2 className={styles.title}>{title}</h2>
         <h3 className={styles.stack}>{stack}</h3>
         <Link to={github} target="_blank" className={styles.link}>
