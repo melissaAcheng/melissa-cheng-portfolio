@@ -2,7 +2,21 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 80px;
-  margin: 80px 20px;
+  margin: 20px;
+}
+
+.iframeContainer{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+}
+.iframeContainer iframe{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .text {
@@ -15,4 +29,16 @@
 
 .link:hover {
   color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 780px) {
+  .music {
+    display: block;
+  }
+  .iframeContainer {
+    margin: 20px auto;
+  }
 }

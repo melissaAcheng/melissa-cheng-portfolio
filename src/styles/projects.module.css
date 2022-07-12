@@ -31,3 +31,13 @@
 .link:hover {
   color: white;
 }
+
+/* MEDIA QUERIES */
+
+/* tablets */
+@media screen and (max-width: 780px) {
+  .projects {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
