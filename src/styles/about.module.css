@@ -22,6 +22,9 @@
   .about {
     display: block;
   }
+  .text {
+    margin: 20px;
+  }
 }
 
 @media screen and (max-width: 480px) {

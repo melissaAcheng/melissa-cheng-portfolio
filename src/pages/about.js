@@ -11,7 +11,7 @@ const AboutPage = () => {
     <Layout pageTitle="About">
       <section className={styles.about}>
         <StaticImage alt="profile" src="../images/profile_3.jpg" />
-        <div>
+        <div className={styles.text}>
           <h2>Hi there!</h2>
           <br />
           <p>
