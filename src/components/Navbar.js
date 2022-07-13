@@ -14,16 +14,16 @@ const Navbar = ({ pageTitle, children }) => {
     }
   `);
   return (
-    <nav>
-      <div className="navHeader">
-        <h1>
-          <Link to="/">{data.site.siteMetadata.title}</Link>
-        </h1>
-        <div className="navMenu">
-          <Hamburger direction="left" toggled={navbarOpen} toggle={setNavbarOpen} />
-        </div>
+    <nav className={`${navbarOpen ? "showMenu" : ""}`}>
+      <h1>
+        <Link to="/">{data.site.siteMetadata.title}</Link>
+      </h1>
+
+      <div className="hamburger">
+        <Hamburger direction="left" toggled={navbarOpen} toggle={setNavbarOpen} />
       </div>
-      <ul className={`${navbarOpen ? "showMenu" : ""}`}>
+
+      <ul>
         <li>
           <Link to="/about">About</Link>
         </li>
