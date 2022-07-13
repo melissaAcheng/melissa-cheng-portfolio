@@ -20,7 +20,7 @@ const Navbar = ({ pageTitle, children }) => {
       </h1>
 
       <div className="hamburger">
-        <Hamburger direction="left" toggled={navbarOpen} toggle={setNavbarOpen} />
+        <Hamburger direction="left" toggled={navbarOpen} toggle={setNavbarOpen} color="#818181" />
       </div>
 
       <ul>
