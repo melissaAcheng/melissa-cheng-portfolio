@@ -21,6 +21,7 @@ body {
 /* LAYOUT AND NAV */
 .layout {
   /* max-width: 1200px; */
+  max-width: 1200px;
   position: relative;
   min-height: 100vh;
   margin: 0 auto;
