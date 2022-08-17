@@ -18,8 +18,8 @@ const IndexPage = ({ data }) => {
         <div className={styles.textbox}>
           <h2>Software Engineer & Flutist</h2>
           <p>
-            Creating art in different forms and dimensions. As a professional flutist and educator, I look to music for
-            beauty and inspiration. As a software engineer, I strive for efficiency and innovative design.{" "}
+            Creating art in different forms and dimensions. As a software engineer, I strive for efficiency and
+            innovative design. As a professional flutist and educator, I look to music for beauty and inspiration.{" "}
           </p>
           <Link className={styles.btn} to="/about">
             About Me
