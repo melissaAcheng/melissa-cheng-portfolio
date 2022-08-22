@@ -33,9 +33,9 @@ const Navbar = ({ pageTitle, children }) => {
         <li>
           <Link to="/music">Music</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/teaching">Teaching</Link>
-        </li>
+        </li> */}
         <li>
           <Link to="/blog">Blog</Link>
         </li>
