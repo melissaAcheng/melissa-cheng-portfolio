@@ -6,7 +6,7 @@ import * as styles from "../styles/project-details.module.css";
 
 const projectDetails = ({ data }) => {
   const { html } = data.markdownRemark;
-  const { title, stack, github, thumb } = data.markdownRemark.frontmatter;
+  const { title, stack, github, thumb, demo } = data.markdownRemark.frontmatter;
   return (
     <Layout>
       <div className={styles.project}>
@@ -15,6 +15,15 @@ const projectDetails = ({ data }) => {
         <Link to={github} target="_blank" className={styles.link}>
           GitHub Code
         </Link>
+        {demo !== null ? (
+          <p>
+            <Link to={demo} target="_blank" className={styles.link}>
+              Live Demo
+            </Link>
+          </p>
+        ) : (
+          ""
+        )}
         <div className={styles.html} dangerouslySetInnerHTML={{ __html: html }} />
         <div className={styles.featured}>
           <GatsbyImage image={thumb.childImageSharp.gatsbyImageData} />
@@ -34,6 +43,7 @@ export const query = graphql`
         stack
         title
         github
+        demo
         thumb {
           childImageSharp {
             gatsbyImageData
