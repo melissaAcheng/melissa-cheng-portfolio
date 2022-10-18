@@ -13,7 +13,7 @@ thumb: ../images/thumbs/studio-portal_1.png
 
 ### About
 
-As a music teacher, I wanted to create an app that would allow me to easily write and share weekly lesson notes with my students. Too often my students show up to lessons having forgotten their physical lesson notebook. I decided to go with the MERN stack for React's reusability of components and MongoDB's flexibility.
+For our individual capstone project during coding bootcamp, I designed and built Studio Portal - a lesson note taking web application for music teachers and their students. Developing the application’s features and functions was simple. I chose to use the MERN stack because of its reputation for high-performance and customization. I utilized the YouTube API so teachers can easily search for and include a YouTube in the lesson note.
 
 <!-- Any problems encountered -->
 
@@ -31,4 +31,3 @@ My last issue with building the models was deciding on how many collections to m
 
 ### Looking Ahead
 
-One of the main features I wanted to add was including a YouTube video in the lesson notes so the student could easily watch or listen without navigating to a new page. Currently the teacher can copy and paste the link into the notes and the video is embedded into page. However, in the future, I would like to add a search and add feature directly in the app.

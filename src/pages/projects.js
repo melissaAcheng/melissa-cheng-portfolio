@@ -20,7 +20,7 @@ const ProjectsPage = ({ data }) => {
                 <div>
                   <GatsbyImage image={project.frontmatter.thumb.childImageSharp.gatsbyImageData} alt="project image" />
                   <h3>{project.frontmatter.title}</h3>
-               </div>
+                </div>
               </Link>
               <p>{project.frontmatter.stack}</p>
               <p>
@@ -28,6 +28,15 @@ const ProjectsPage = ({ data }) => {
                   GitHub Code
                 </Link>
               </p>
+              {project.frontmatter.demo !== null ? (
+                <p>
+                  <Link to={`${project.frontmatter.demo}`} target="_blank" className={styles.link}>
+                    Live Demo
+                  </Link>
+                </p>
+              ) : (
+                ""
+              )}
             </div>
           ))}
         </div>
@@ -54,6 +63,7 @@ export const query = graphql`
           stack
           slug
           github
+          demo
         }
       }
     }
