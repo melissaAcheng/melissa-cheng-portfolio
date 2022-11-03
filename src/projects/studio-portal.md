@@ -5,6 +5,7 @@ slug: studio-portal
 date: 2022-05-15T00:00:00+00:00
 github: https://github.com/melissaAcheng/StudioPortal
 thumb: ../images/thumbs/studio-portal_1.png
+demo: https://www.loom.com/share/4a173196694f4ade96c948435e9eb823
 ---
 
 <!-- Screenshot of the project -->
@@ -31,3 +32,4 @@ My last issue with building the models was deciding on how many collections to m
 
 ### Looking Ahead
 
+For future iterations of this project, I would like to add a daily practice chart for students to fill out. Teachers will be able to log in and view their students' progress. 
