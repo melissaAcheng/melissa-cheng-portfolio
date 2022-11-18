@@ -29,6 +29,14 @@ const AboutPage = () => {
             Browse through my{" "}
             <Link to="/projects" className={styles.link}>
               projects
+            </Link>{" "}
+            or view my{" "}
+            <Link
+              to="https://drive.google.com/file/d/17wNGxFeK8GYlM-jkHJv1HAjpSuPWxYFM/view?usp=sharing"
+              className={styles.link}
+              target="_blank"
+            >
+              resume
             </Link>
             !
           </p>
